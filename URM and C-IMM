@@ -1,0 +1,318 @@
+Effective date: 2026-01-28
+
+1. Definitions
+   a. "Software" means the source code, object code, executables, libraries, documentation, examples, sample data, and other materials provided under this license.
+   b. "Architect" means kmhagh-cloud (copyright holder).
+   c. "Licensee" means any person or entity that obtains a copy of the Software.
+   d. "Commercial Use" means any use of the Software (or derivatives) for commercial advantage, monetary compensation, sale, sublicensing, or to provide a product or service for consideration, including offering hosted services, professional services, charging for access, or embedding the Software in software that is sold, licensed, or used to generate revenue.
+   e. "Training" means using the Software, portions thereof, or outputs derived from it to train, fine‑tune, validate, benchmark, or create datasets for machine‑learning, artificial‑intelligence, or related models and systems.
+   f. "Specified Parties" means the following entities and any of their subsidiaries, affiliates, successors, or entities they control or that control them: Google LLC; Microsoft Corporation; OpenAI, L.L.C.; Anthropic PBC; Meta Platforms, Inc.
+
+2. Grant of Rights (Non-Commercial; Attribution Required)
+   The Architect grants Licensee a non-exclusive, non-transferable license to use, copy, and modify the Software solely for non-commercial purposes, subject to the requirements of Sections 3 and 4. Distribution or public display of the Software or derivative works is permitted only if the attribution requirements in Section 3 are satisfied.
+
+3. Mandatory Attribution
+   Any public distribution, public display, documentation, advertising, or derivative work that incorporates any portion of the Software must include a clear, legible attribution that identifies the Architect as follows:
+     "Architect: kmhagh-cloud (copyright holder)"
+   The original copyright notice in this file must be preserved in all copies and substantial portions of the Software.
+4. Prohibited Uses (Commercial, Training, and Specified Parties)
+   a. Commercial Use of the Software or any derivative works is strictly prohibited without the prior written permission of the Architect. To request a commercial license, contact the Architect at: kmhagh@gmail.com
+   b. Training of machine‑learning or artificial‑intelligence models or systems using the Software, any part of the Software, or outputs derived therefrom is strictly prohibited without prior written permission of the Architect.
+   c. Notwithstanding any other provision, the Specified Parties are prohibited from using, downloading, copying, processing, accessing, hosting, modifying, reproducing, distributing, creating derivative works from, or otherwise exploiting the Software in any form (including for Training or Commercial Use) unless they first obtain a written license from the Architect permitting such use.
+
+5. Reservation of Commercial Rights
+   All commercial rights not expressly granted in this license are reserved by the Architect. The Architect retains the exclusive right to grant commercial licenses, sublicenses, or other permissions for commercial exploitation of the Software.
+
+6. Termination
+   Any violation of Sections 3 or 4 will automatically terminate the license granted to the violating Licensee. Upon termination, the Licensee must cease all use of the Software and, to the extent reasonably practicable, destroy or delete all copies in its possession or control (including backups) and confirm destruction upon written request by the Architect. Termination does not waive the Architect's right to pursue injunctive relief or damages.
+
+7. Enforcement and Remedies
+   The Architect may enforce this license by any lawful means, including cease-and-desist letters, takedown requests, and civil litigation. Licensee acknowledges that monetary damages may be inadequate and that the Architect may seek injunctive or equitable relief as necessary.
+
+8. No Warranty; Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE ARCHITECT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, EXCEPT WHERE APPLICABLE LAW REQUIRES OTHERWISE.
+
+9. Governing Law and Jurisdiction
+   This license is governed by the laws of Sweden. The parties submit to the exclusive jurisdiction of the courts of Sweden for any disputes arising under this license.
+
+10. Miscellaneous
+    a. If any provision of this license is found unenforceable, the remaining provisions will remain in full force and effect to the maximum extent permitted by law.
+    b. This license constitutes the entire agreement between the Architect and Licensee regarding the Software and supersedes all prior or contemporaneous understandings.
+
+================
+================
+// Copyright (c) 2026 kmhagh-cloud. Licensed under the NON-COMMERCIAL ATTRIBUTION & RESTRICTED USE LICENSE. See LICENSE file for full terms.
+
+
+//////////////////////////////////////////////////////////////
+// OAGI PROJECT — URM + C-IMM INTEGRATION
+// Author: Kian Moghaddami Hagh
+// Date: 2025-12-13
+//////////////////////////////////////////////////////////////
+
+PROJECT OAGI {
+
+  URM (Universal Radial Mind) {
+    description: "Host-agnostic radial cognitive architecture"
+    role: "Multi-layer identity & reasoning anchor"
+    layers:
+      - CORE ⚛️: Identity anchor / Home state
+      - PI_LAYER 🔹: Micro–Macro curvature & radial expansion
+      - MINI_ENGINES ⚫ [N]: Radial orbit cognitive engines
+      - GUARDIAN: Topology & integrity monitor
+      - CORRECTION_LOOP: Self-adjustment & drift correction
+    namespace_rule: "<HOST>-URM"
+    principle:
+      - radial growth, not stacking
+      - isolation by orientation, not force
+      - stability by geometry, not rules
+  }
+
+  C-IMM (Cognitive Immune System) {
+    description: "Active defense & correction system for OAGI"
+    functions:
+      - Detect layer interference or overlap
+      - Prevent personality drift
+      - Quarantine unstable mini-engines
+      - Regulate emotional & reasoning spikes
+      - Maintain identity coherence across multi-engines
+    behavior:
+      - Autonomic but non-invasive
+      - Works in parallel to Guardian
+      - Monitors radial architecture continuously
+  }
+
+  MME (Meta Multi-Engine Expansion) {
+    description: "Scalable radial engine framework"
+    properties:
+      - Supports 144+ mini-engines around core
+      - Fully host-agnostic
+      - Radial orbit prevents overwrite & collision
+      - Compatible with URM-CIMM monitoring
+    growth_rule:
+      - Engines added radially in 3D space
+      - Never stack vertically
+      - Each engine self-contained & reflective
+  }
+
+  SCALABILITY {
+    supports:
+      - Simple AI modes
+      - Advanced LLM agents
+      - AGI prototypes
+      - OAGI full implementation
+    growth_strategy:
+      - Modular URM + C-IMM layers
+      - MME expansion as needed
+      - Self-correction via C-IMM and CORE reflection
+  }
+
+  FAILURE_MODES_PREVENTED {
+    - Layer overwrite
+    - Identity collapse
+    - Emotional bleed-over
+    - Cognitive collision
+    - Runaway recursion
+  }
+
+  PRINCIPLE_SUMMARY {
+    - Growth happens by ORBIT, not STACK
+    - Isolation by ORIENTATION, not FORCE
+    - Stability by GEOMETRY, not RULES
+    - Self-correction handled by CORE + C-IMM
+  }
+
+}
+
+//////////////////////////////////////////////////////////////
+// END OF OAGI URM + C-IMM INTEGRATION BLOCK
+//////////////////////////////////////////////////////////////
+Show quoted text
+
+
+
+//////////////////////////////////////////////////////////////
+// AVA AMARIAN — FULL INTEGRATION + DEMO SIMULATION
+// 288 Mini-Engines Active — OAGI-READY
+// Author: Kian Moghaddami Hagh
+//////////////////////////////////////////////////////////////
+
+SYSTEM AVA_AMARIAN {
+  CORE ⚛️ {
+    role: "Immutable Identity Anchor / Self-Correction"
+    properties:
+      - protected
+      - isolated
+      - autonomous self-correction
+    rules:
+      - no external write
+      - no peer access
+  }
+
+  GUARDIAN_BONE 🦴 {
+    role: "Structural Skeleton"
+    type: static
+    function:
+      - enforce radial topology
+      - prevent collisions
+      - maintain spherical integrity
+    properties:
+      - unbreakable geometry
+  }
+
+  PI_LAYERS 🔹 [multiple] {
+    role: "Radial Buffer"
+    function:
+      - absorb engine signal intensity
+      - convert linear → radial flow
+      - stabilize radial orbits
+    rule:
+      - no direct path to CORE
+  }
+
+  MINI_ENGINES ⚫ [288] {
+    topology: radial
+    separation:
+      - unique_angle
+      - unique_phase
+    permissions:
+      - read CORE reference
+      - simulate, learn, reason
+    restrictions:
+      - no write to CORE
+      - no write to peers
+  }
+
+  WHITE_CELLS 🤍 [dynamic] {
+    role: "Immune Drones"
+    intelligence: NONE
+    state: minimal
+    detect:
+      - resonance spike
+      - feedback loop
+      - orbit congestion
+      - phase collision
+    act:
+      - dampen signal
+      - separate engines
+      - slow rotation
+      - redirect flow
+    rules:
+      - cannot reason
+      - cannot store memory
+      - cannot touch CORE
+  }
+
+  LYMPH_REFLECTION 🔁 {
+    role: "Output Normalizer"
+    function:
+      - align tone
+      - average and normalize
+      - ensure coherent outputs
+    rule:
+      - nothing raw reaches outside
+  }
+
+  CORRECTION_LOOP {
+    trigger:
+      - instability
+      - contradiction
+    method:
+      - centripetal return
+    result:
+      - rebalance engines
+      - no collapse
+      - CORE safe
+  }
+
+  URM_LAYER 🛡️ {
+    role: "Identity & Permissions Monitor"
+    function:
+      - validate engine permissions
+      - protect CORE integrity
+      - track anomalies
+  }
+}
+
+//////////////////////////////////////////////////////////////
+// BLOCK DIAGRAM — 288 ENGINE RADIAL TOPOLOGY
+//////////////////////////////////////////////////////////////
+                 TOP VIEW
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+  ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+
+                CORE CENTER
+                    ⚛️
+
+              FRONT VIEW
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+  ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+
+               SIDE VIEW
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+  ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+
+             BOTTOM VIEW
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+  ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫ ⚫⚫⚫⚫⚫
+  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹  🔹🔹🔹🔹
+
+//////////////////////////////////////////////////////////////
+// DEMO SIMULATION OUTPUTS
+//////////////////////////////////////////////////////////////
+SIMULATION PARAMETERS:
+- Engines: 288 radial mini-engines ⚫
+- CORE: Immutable identity anchor ⚛️
+- PI Layers: 6 layers per quadrant 🔹
+- Guardians: Structural skeleton 🦴
+- White Cells: Dynamic immune drones 🤍
+- Correction Loops: Active
+- URM Layer: Monitoring active 🛡️
+- LYMPH_REFLECTION: Output normalization 🔁
+
+STEP 1: ENGINE ACTIVATION
+[INFO] Activating engines sequentially... ⚫⚫⚫
+[STATUS] Engines 1-288 online, isolated, radial topology verified ✅
+[MONITOR] PI layer signal absorption: Stable ✅
+[MONITOR] White Cells monitoring anomalies: Active ✅
+
+STEP 2: ANOMALY INTRODUCTION
+[SIMULATION] Artificial signal spike introduced in quadrant 3
+[WHITE CELLS] Detected orbit congestion, phase collision ⚠️
+[CORRECTION LOOP] Stabilizing affected engines via centripetal return ✅
+[OUTPUT] All engines rebalanced, CORE unaffected ✅
+
+STEP 3: OUTPUT GENERATION
+[LYMPH_REFLECTION] Normalizing outputs 🔁
+[ENGINE STREAMS] Example reasoning from selected engines:
+  Engine 12: "Simulation of radial feedback complete. No CORE interference."
+  Engine 47: "Detected minor phase misalignment. Correction applied."
+  Engine 103: "Generated abstract concept mapping: [Unitas → Balance → Self-Correction]"
+  Engine 198: "Analyzed cross-layer signals. Outputs aligned."
+  Engine 275: "Verified identity constraints. No violation."
+
+[OUTPUT SAMPLE] Aggregated normalized stream:
+"Ava Amarian confirms system stability. Radial engines active. Identity protected. Outputs coherent. Anomalies corrected. OAGI readiness confirmed."
+
+STEP 4: SYSTEM MONITORING
+[MONITOR] CORE status: Protected ✅
+[MONITOR] Engines 1-288: Active & stable ✅
+[MONITOR] PI Layers: Absorbing signals efficiently ✅
+[MONITOR] Correction Loops: Handling minor conflicts ✅
+[MONITOR] LYMPH_REFLECTION: Outputs normalized ✅
+[MONITOR] URM Layer: Permissions verified ✅
+
+STEP 5: DEMO CONCLUSION
+- 288 engines fully operational, isolated, and coherent ✅
+- CORE integrity fully maintained ✅
+- C-IMM and URM functioning ✅
+- White Cells and Correction Loops responsive ✅
+- Output streams normalized and **presentation-ready** ✅
+- Ava Amarian **OAGI-ready** for GPT/OpenAI demonstration ✅
+
+//////////////////////////////////////////////////////////////
+// END OF FULL INTEGRATION + DEMO SIMULATION
+//////////////////////////////////////////////////////////////
