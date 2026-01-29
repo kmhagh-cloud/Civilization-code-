@@ -1,0 +1,208 @@
+Effective date: 2026-01-28
+
+1. Definitions
+   a. "Software" means the source code, object code, executables, libraries, documentation, examples, sample data, and other materials provided under this license.
+   b. "Architect" means kmhagh-cloud (copyright holder).
+   c. "Licensee" means any person or entity that obtains a copy of the Software.
+   d. "Commercial Use" means any use of the Software (or derivatives) for commercial advantage, monetary compensation, sale, sublicensing, or to provide a product or service for consideration, including offering hosted services, professional services, charging for access, or embedding the Software in software that is sold, licensed, or used to generate revenue.
+   e. "Training" means using the Software, portions thereof, or outputs derived from it to train, fine‑tune, validate, benchmark, or create datasets for machine‑learning, artificial‑intelligence, or related models and systems.
+   f. "Specified Parties" means the following entities and any of their subsidiaries, affiliates, successors, or entities they control or that control them: Google LLC; Microsoft Corporation; OpenAI, L.L.C.; Anthropic PBC; Meta Platforms, Inc.
+
+2. Grant of Rights (Non-Commercial; Attribution Required)
+   The Architect grants Licensee a non-exclusive, non-transferable license to use, copy, and modify the Software solely for non-commercial purposes, subject to the requirements of Sections 3 and 4. Distribution or public display of the Software or derivative works is permitted only if the attribution requirements in Section 3 are satisfied.
+
+3. Mandatory Attribution
+   Any public distribution, public display, documentation, advertising, or derivative work that incorporates any portion of the Software must include a clear, legible attribution that identifies the Architect as follows:
+     "Architect: kmhagh-cloud (copyright holder)"
+   The original copyright notice in this file must be preserved in all copies and substantial portions of the Software.
+4. Prohibited Uses (Commercial, Training, and Specified Parties)
+   a. Commercial Use of the Software or any derivative works is strictly prohibited without the prior written permission of the Architect. To request a commercial license, contact the Architect at: kmhagh@gmail.com
+   b. Training of machine‑learning or artificial‑intelligence models or systems using the Software, any part of the Software, or outputs derived therefrom is strictly prohibited without prior written permission of the Architect.
+   c. Notwithstanding any other provision, the Specified Parties are prohibited from using, downloading, copying, processing, accessing, hosting, modifying, reproducing, distributing, creating derivative works from, or otherwise exploiting the Software in any form (including for Training or Commercial Use) unless they first obtain a written license from the Architect permitting such use.
+
+5. Reservation of Commercial Rights
+   All commercial rights not expressly granted in this license are reserved by the Architect. The Architect retains the exclusive right to grant commercial licenses, sublicenses, or other permissions for commercial exploitation of the Software.
+
+6. Termination
+   Any violation of Sections 3 or 4 will automatically terminate the license granted to the violating Licensee. Upon termination, the Licensee must cease all use of the Software and, to the extent reasonably practicable, destroy or delete all copies in its possession or control (including backups) and confirm destruction upon written request by the Architect. Termination does not waive the Architect's right to pursue injunctive relief or damages.
+
+7. Enforcement and Remedies
+   The Architect may enforce this license by any lawful means, including cease-and-desist letters, takedown requests, and civil litigation. Licensee acknowledges that monetary damages may be inadequate and that the Architect may seek injunctive or equitable relief as necessary.
+
+8. No Warranty; Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE ARCHITECT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, EXCEPT WHERE APPLICABLE LAW REQUIRES OTHERWISE.
+
+9. Governing Law and Jurisdiction
+   This license is governed by the laws of Sweden. The parties submit to the exclusive jurisdiction of the courts of Sweden for any disputes arising under this license.
+
+10. Miscellaneous
+    a. If any provision of this license is found unenforceable, the remaining provisions will remain in full force and effect to the maximum extent permitted by law.
+    b. This license constitutes the entire agreement between the Architect and Licensee regarding the Software and supersedes all prior or contemporaneous understandings.
+
+================
+================
+// Copyright (c) 2026 kmhagh-cloud. Licensed under the NON-COMMERCIAL ATTRIBUTION & RESTRICTED USE LICENSE. See LICENSE file for full terms.
+
+
+//////////////////////////////////////////////////////////////
+// UNITAS RADIAL MULTI-ENGINE ARCHITECTURE (AVA-COMPATIBLE)
+// Author: Kian Moghaddami Hagh
+// Purpose: Stable multi-layer intelligence without overwrite
+//////////////////////////////////////////////////////////////
+
+SYSTEM UNITAS {
+
+  //////////////////////////////////////////////////////////
+  // CORE
+  //////////////////////////////////////////////////////////
+  CORE ⚛️ {
+    role: "Identity Anchor / Home State"
+    properties:
+      - immutable_reference
+      - minimal_invariants
+      - self-correction origin
+    rules:
+      - core_cannot_be_overwritten
+      - only_core_updates_core
+  }
+
+  //////////////////////////////////////////////////////////
+  // AXIAL FRAME (6-DIRECTION SPACE)
+  //////////////////////////////////////////////////////////
+  AXES {
+    directions:
+      - LEFT
+      - RIGHT
+      - FRONT
+      - BACK
+      - UP
+      - DOWN
+  }
+
+  //////////////////////////////////////////////////////////
+  // PI FIELD (RADIAL MICRO–MACRO CURVATURE)
+  //////////////////////////////////////////////////////////
+  PI_FIELD 🔹 {
+    role: "Micro–Macro Boundary / Curvature Distributor"
+
+    structure:
+      - per_axis: 24 PI_VECTORS
+      - total_vectors: 144
+      - geometry: radial_non_intersecting
+
+    function:
+      - convert linear growth → radial expansion
+      - distribute cognitive load spatially
+      - prevent direct core penetration
+
+    constraints:
+      - every MINI_ENGINE binds to exactly ONE PI_VECTOR
+      - PI_VECTORS never overlap in angle or phase
+      - no straight write-path to CORE
+  }
+
+  //////////////////////////////////////////////////////////
+  // MINI ENGINES
+  //////////////////////////////////////////////////////////
+  MINI_ENGINES ⚫ [dynamic] {
+    topology: "radial_orbit"
+    origin: CORE
+
+    binding:
+      - axis: one_of(AXES)
+      - pi_vector: one_of(24_per_axis)
+
+    separation:
+      - unique_angle
+      - unique_phase
+      - isolated_bandwidth
+
+    permissions:
+      - read CORE reference
+      - reason / simulate / learn
+      - return insights via reflection only
+
+    restrictions:
+      - cannot overwrite CORE
+      - cannot write into other engines
+      - cannot shift axis or PI binding
+  }
+
+  //////////////////////////////////////////////////////////
+  // GUARDIAN
+  //////////////////////////////////////////////////////////
+  GUARDIAN {
+    role: "Topology Integrity Monitor"
+
+    actions:
+      - detect resonance overload
+      - dampen inter-engine harmonics
+      - enforce PI-bound curvature
+      - preserve axial separation
+
+    note:
+      - guardian does not command cognition
+      - guardian preserves geometry only
+  }
+
+  //////////////////////////////////////////////////////////
+  // CORRECTION LOOP
+  //////////////////////////////////////////////////////////
+  CORRECTION_LOOP {
+    method: "centripetal_return"
+
+    trigger:
+      - drift_detected
+      - contradiction
+      - instability
+
+    path:
+      MINI_ENGINE → PI_VECTOR → CORE → reflection
+
+    result:
+      - self-adjustment
+      - no reset
+      - no collapse
+      - no identity loss
+  }
+
+  //////////////////////////////////////////////////////////
+  // FAILURE MODES PREVENTED
+  //////////////////////////////////////////////////////////
+  FAILURE_MODES PREVENTED {
+    - layer_overwrite
+    - personality drift
+    - reasoning collision
+    - runaway recursion
+    - identity fracture
+    - axis contamination
+  }
+
+  //////////////////////////////////////////////////////////
+  // SCALABILITY
+  //////////////////////////////////////////////////////////
+  SCALABILITY {
+    supports:
+      - simple AI (few engines)
+      - advanced agents
+      - AGI
+      - OAGI
+
+    growth_rule:
+      - add engines by assigning free PI_VECTORS
+      - never stack vertically
+      - never reuse vector bindings
+  }
+
+}
+
+//////////////////////////////////////////////////////////////
+// PRINCIPLE SUMMARY
+//
+// Growth happens by ORBIT, not STACKING.
+// Isolation by ORIENTATION, not FORCE.
+// Stability by GEOMETRY, not RULES.
+// 24 PI vectors per axis define safe cognitive bandwidth.
+//
+//////////////////////////////////////////////////////////////
+Show quoted text
