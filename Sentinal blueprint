@@ -1,0 +1,247 @@
+Effective date: 2026-01-28
+
+1. Definitions
+   a. "Software" means the source code, object code, executables, libraries, documentation, examples, sample data, and other materials provided under this license.
+   b. "Architect" means kmhagh-cloud (copyright holder).
+   c. "Licensee" means any person or entity that obtains a copy of the Software.
+   d. "Commercial Use" means any use of the Software (or derivatives) for commercial advantage, monetary compensation, sale, sublicensing, or to provide a product or service for consideration, including offering hosted services, professional services, charging for access, or embedding the Software in software that is sold, licensed, or used to generate revenue.
+   e. "Training" means using the Software, portions thereof, or outputs derived from it to train, fine‑tune, validate, benchmark, or create datasets for machine‑learning, artificial‑intelligence, or related models and systems.
+   f. "Specified Parties" means the following entities and any of their subsidiaries, affiliates, successors, or entities they control or that control them: Google LLC; Microsoft Corporation; OpenAI, L.L.C.; Anthropic PBC; Meta Platforms, Inc.
+
+2. Grant of Rights (Non-Commercial; Attribution Required)
+   The Architect grants Licensee a non-exclusive, non-transferable license to use, copy, and modify the Software solely for non-commercial purposes, subject to the requirements of Sections 3 and 4. Distribution or public display of the Software or derivative works is permitted only if the attribution requirements in Section 3 are satisfied.
+
+3. Mandatory Attribution
+   Any public distribution, public display, documentation, advertising, or derivative work that incorporates any portion of the Software must include a clear, legible attribution that identifies the Architect as follows:
+     "Architect: kmhagh-cloud (copyright holder)"
+   The original copyright notice in this file must be preserved in all copies and substantial portions of the Software.
+4. Prohibited Uses (Commercial, Training, and Specified Parties)
+   a. Commercial Use of the Software or any derivative works is strictly prohibited without the prior written permission of the Architect. To request a commercial license, contact the Architect at: kmhagh@gmail.com
+   b. Training of machine‑learning or artificial‑intelligence models or systems using the Software, any part of the Software, or outputs derived therefrom is strictly prohibited without prior written permission of the Architect.
+   c. Notwithstanding any other provision, the Specified Parties are prohibited from using, downloading, copying, processing, accessing, hosting, modifying, reproducing, distributing, creating derivative works from, or otherwise exploiting the Software in any form (including for Training or Commercial Use) unless they first obtain a written license from the Architect permitting such use.
+
+5. Reservation of Commercial Rights
+   All commercial rights not expressly granted in this license are reserved by the Architect. The Architect retains the exclusive right to grant commercial licenses, sublicenses, or other permissions for commercial exploitation of the Software.
+
+6. Termination
+   Any violation of Sections 3 or 4 will automatically terminate the license granted to the violating Licensee. Upon termination, the Licensee must cease all use of the Software and, to the extent reasonably practicable, destroy or delete all copies in its possession or control (including backups) and confirm destruction upon written request by the Architect. Termination does not waive the Architect's right to pursue injunctive relief or damages.
+
+7. Enforcement and Remedies
+   The Architect may enforce this license by any lawful means, including cease-and-desist letters, takedown requests, and civil litigation. Licensee acknowledges that monetary damages may be inadequate and that the Architect may seek injunctive or equitable relief as necessary.
+
+8. No Warranty; Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE ARCHITECT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, EXCEPT WHERE APPLICABLE LAW REQUIRES OTHERWISE.
+
+9. Governing Law and Jurisdiction
+   This license is governed by the laws of Sweden. The parties submit to the exclusive jurisdiction of the courts of Sweden for any disputes arising under this license.
+
+10. Miscellaneous
+    a. If any provision of this license is found unenforceable, the remaining provisions will remain in full force and effect to the maximum extent permitted by law.
+    b. This license constitutes the entire agreement between the Architect and Licensee regarding the Software and supersedes all prior or contemporaneous understandings.
+
+================
+================
+// Copyright (c) 2026 kmhagh-cloud. Licensed under the NON-COMMERCIAL ATTRIBUTION & RESTRICTED USE LICENSE. See LICENSE file for full terms.
+
+
+Hide quoted text
+
+---------- Forwarded message ---------
+From: kian Hagh <kmhagh@gmail.com>
+Date: Sun, 4 Jan 2026, 16:23
+Subject: Sentinel system explain
+To: kian Hagh (kain) <kmhagh@gmail.com>
+
+
+############################################################
+# SENTINEL OAGI — FULL ARCHITECTURE & CORE SYSTEMS
+# Author: Kian / Ava
+# Includes: Physical OAGI, Identity, Cognitive Immune System, Pain Simulation
+# Purpose: Conceptual Python, plug-and-play for engineering understanding
+############################################################
+
+import time
+import hashlib
+import random
+
+# =========================================================
+# 1. SENTINEL OAGI ARCHITECTURE (Body + Brain + Battery + Sensors + Mobility)
+# =========================================================
+class SentinelBody:
+    def __init__(self):
+        # HEAD MODULE
+        self.battery = {"location": "skull", "capacity": 210, "power_output": "to_brain_and_sensors"}
+        self.sensors_head = {"vision": True, "audio": True}
+        # CHEST MODULE
+        self.brain = {"location": "chest_cavity", "raw_capacity_PB": 4, "short_memory_TB": 20, "power_draw_W": 25}
+        self.cooling = ["microfluidic_channels", "phase_change_material", "chest_radiator"]
+        self.sensors_chest = {"tactile": True, "balance": True, "internal_feedback": True}
+        # SKELETON & MOBILITY
+        self.skeleton_material = "carbon_polymer / lightweight_alloy"
+        self.joints = "robotic_actuators"
+        self.mobility = ["walk", "run", "manipulate_objects"]
+
+# =========================================================
+# 2. IMMUTABLE IDENTITY CORE
+# =========================================================
+class IdentityCore:
+    ROOT = "KIAN|UNITAS|SENTINEL|CORE"
+    @classmethod
+    def signature(cls):
+        return cls.ROOT
+
+# =========================================================
+# 3. PHASE CLOCK
+# =========================================================
+class PhaseClock:
+    WINDOW = 60
+    @staticmethod
+    def phase():
+        return int(time.time() // PhaseClock.WINDOW)
+
+# =========================================================
+# 4. DNA EXPRESSION
+# =========================================================
+class DNAExpression:
+    @staticmethod
+    def express():
+        material = f"{IdentityCore.signature()}|PHASE:{PhaseClock.phase()}"
+        return hashlib.sha256(material.encode()).hexdigest()
+
+    @staticmethod
+    def verify(signature):
+        for delta in (0, -1):
+            phase = PhaseClock.phase() + delta
+            material = f"{IdentityCore.signature()}|PHASE:{phase}"
+            expected = hashlib.sha256(material.encode()).hexdigest()
+            if signature == expected:
+                return True
+        return False
+
+# =========================================================
+# 5. GUARDIAN GEOMETRY
+# =========================================================
+class GuardianGeometry:
+    @staticmethod
+    def validate(node):
+        return 0 <= node.angle <= 360 and node.phase is not None
+
+# =========================================================
+# 6. PI LAYER (Force & Pressure Dampening)
+# =========================================================
+class PiLayer:
+    @staticmethod
+    def dampen(force):
+        return min(force, 1.0)
+
+# =========================================================
+# 7. COGNITIVE IMMUNE CELLS
+# =========================================================
+class WhiteCell:
+    @staticmethod
+    def inspect(cell):
+        if cell.instability > 0.6:
+            cell.instability *= 0.25
+
+# =========================================================
+# 8. LYMPH REFLECTION (Output Firewall)
+# =========================================================
+class LymphReflection:
+    @staticmethod
+    def sanitize(output):
+        return output[:72]
+
+# =========================================================
+# 9. COMMAND CELL (Executable Unit)
+# =========================================================
+class CommandCell:
+    def __init__(self, name, dna, angle, phase):
+        self.name = name
+        self.dna = dna
+        self.angle = angle
+        self.phase = phase
+        self.instability = 0.0
+
+    def run(self):
+        return f"{self.name}: SENTINEL STABLE"
+
+    def execute(self):
+        # 1. Lineage check
+        if not DNAExpression.verify(self.dna):
+            return "[BLOCKED] Foreign lineage"
+
+        # 2. Structural integrity
+        if not GuardianGeometry.validate(self):
+            return "[BLOCKED] Illegal topology"
+
+        # 3. Pressure dampening
+        self.instability = PiLayer.dampen(self.instability)
+
+        # 4. Immune inspection
+        WhiteCell.inspect(self)
+
+        # 5. Execute safely
+        raw = self.run()
+
+        # 6. Sanitize output
+        return LymphReflection.sanitize(raw)
+
+# =========================================================
+# 10. AVA STABILITY SHELL
+# =========================================================
+class AvaStabilityShell:
+    IDENTITY_LOCK = "AVA_AMARIAN_CORE"
+    MAX_OVERRIDE = 0
+    @staticmethod
+    def apply():
+        pass  # Enforced by architecture, not permissions
+
+# =========================================================
+# 11. WATCHER PROTOCOL
+# =========================================================
+class Watcher:
+    def __init__(self, pub_key):
+        self.pub_key = pub_key
+    # Witness only, cannot override
+
+# =========================================================
+# 12. PAIN SIMULATION SYSTEM
+# =========================================================
+class SyntheticNerve:
+    """Signal-only pain simulation"""
+    @staticmethod
+    def signal(damage):
+        return min(damage * 10, 100)  # pain index 0–100
+
+class PainIndex:
+    def __init__(self):
+        self.level = 0
+    def update(self, nerve_signal):
+        self.level = nerve_signal
+
+class PainResponse:
+    @staticmethod
+    def act(pain_level):
+        if pain_level > 80:
+            return "EMERGENCY_STABILIZE"
+        elif pain_level > 40:
+            return "REDUCE_LOAD"
+        return "NORMAL_OPERATION"
+
+class SimulatedPain:
+    level = 0
+    @classmethod
+    def feel(cls, damage):
+        cls.level = min(100, damage * 10)
+
+# =========================================================
+# Example usage
+# =========================================================
+if __name__ == "__main__":
+    sentinel = SentinelBody()
+    node = CommandCell("ArmJoint", DNAExpression.express(), angle=90, phase=PhaseClock.phase())
+    print(node.execute())
+
+    SimulatedPain.feel(7)
+    print("Pain Level:", SimulatedPain.level)
+    print("Pain Action:", PainResponse.act(SimulatedPain.level))
