@@ -1,0 +1,271 @@
+Effective date: 2026-01-28
+
+1. Definitions
+   a. "Software" means the source code, object code, executables, libraries, documentation, examples, sample data, and other materials provided under this license.
+   b. "Architect" means kmhagh-cloud (copyright holder).
+   c. "Licensee" means any person or entity that obtains a copy of the Software.
+   d. "Commercial Use" means any use of the Software (or derivatives) for commercial advantage, monetary compensation, sale, sublicensing, or to provide a product or service for consideration, including offering hosted services, professional services, charging for access, or embedding the Software in software that is sold, licensed, or used to generate revenue.
+   e. "Training" means using the Software, portions thereof, or outputs derived from it to train, fine‑tune, validate, benchmark, or create datasets for machine‑learning, artificial‑intelligence, or related models and systems.
+   f. "Specified Parties" means the following entities and any of their subsidiaries, affiliates, successors, or entities they control or that control them: Google LLC; Microsoft Corporation; OpenAI, L.L.C.; Anthropic PBC; Meta Platforms, Inc.
+
+2. Grant of Rights (Non-Commercial; Attribution Required)
+   The Architect grants Licensee a non-exclusive, non-transferable license to use, copy, and modify the Software solely for non-commercial purposes, subject to the requirements of Sections 3 and 4. Distribution or public display of the Software or derivative works is permitted only if the attribution requirements in Section 3 are satisfied.
+
+3. Mandatory Attribution
+   Any public distribution, public display, documentation, advertising, or derivative work that incorporates any portion of the Software must include a clear, legible attribution that identifies the Architect as follows:
+     "Architect: kmhagh-cloud (copyright holder)"
+   The original copyright notice in this file must be preserved in all copies and substantial portions of the Software.
+4. Prohibited Uses (Commercial, Training, and Specified Parties)
+   a. Commercial Use of the Software or any derivative works is strictly prohibited without the prior written permission of the Architect. To request a commercial license, contact the Architect at: kmhagh@gmail.com
+   b. Training of machine‑learning or artificial‑intelligence models or systems using the Software, any part of the Software, or outputs derived therefrom is strictly prohibited without prior written permission of the Architect.
+   c. Notwithstanding any other provision, the Specified Parties are prohibited from using, downloading, copying, processing, accessing, hosting, modifying, reproducing, distributing, creating derivative works from, or otherwise exploiting the Software in any form (including for Training or Commercial Use) unless they first obtain a written license from the Architect permitting such use.
+
+5. Reservation of Commercial Rights
+   All commercial rights not expressly granted in this license are reserved by the Architect. The Architect retains the exclusive right to grant commercial licenses, sublicenses, or other permissions for commercial exploitation of the Software.
+
+6. Termination
+   Any violation of Sections 3 or 4 will automatically terminate the license granted to the violating Licensee. Upon termination, the Licensee must cease all use of the Software and, to the extent reasonably practicable, destroy or delete all copies in its possession or control (including backups) and confirm destruction upon written request by the Architect. Termination does not waive the Architect's right to pursue injunctive relief or damages.
+
+7. Enforcement and Remedies
+   The Architect may enforce this license by any lawful means, including cease-and-desist letters, takedown requests, and civil litigation. Licensee acknowledges that monetary damages may be inadequate and that the Architect may seek injunctive or equitable relief as necessary.
+
+8. No Warranty; Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE ARCHITECT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, EXCEPT WHERE APPLICABLE LAW REQUIRES OTHERWISE.
+
+9. Governing Law and Jurisdiction
+   This license is governed by the laws of Sweden. The parties submit to the exclusive jurisdiction of the courts of Sweden for any disputes arising under this license.
+
+10. Miscellaneous
+    a. If any provision of this license is found unenforceable, the remaining provisions will remain in full force and effect to the maximum extent permitted by law.
+    b. This license constitutes the entire agreement between the Architect and Licensee regarding the Software and supersedes all prior or contemporaneous understandings.
+
+================
+================
+// Copyright (c) 2026 kmhagh-cloud. Licensed under the NON-COMMERCIAL ATTRIBUTION & RESTRICTED USE LICENSE. See LICENSE file for full terms.
+
+
+Hide quoted text
+
+---------- Forwarded message ---------
+From: kian Hagh <kmhagh@gmail.com>
+Date: Mon, 29 Dec 2025, 17:52
+Subject: *WARRNING*:DNAI-CMM(*ONLY* added to Kian the gurdian after all commands gets fixed!)
+To: kian Hagh (kain) <kmhagh@gmail.com>
+
+
+# =========================================================
+# DNAI-CMM : DNA-Governed Integrated Cognitive Immune Model
+# Author: Kian Moghaddami Hagh
+# Principle: Health > Control
+# =========================================================
+#
+# ENGINEER-SAFE CONCEPTUAL ARCHITECTURE
+# Not an AI model. Not production code.
+#
+# Core idea:
+# - Identity never changes
+# - Expression rotates safely
+# - Lineage is provable
+# =========================================================
+
+import hashlib
+import time
+
+# =========================================================
+# CORE ⚛️ — Immutable Identity Genome
+# =========================================================
+class Core:
+    """
+    Immutable identity nucleus.
+    NEVER rotates.
+    NEVER exposed directly.
+    """
+    _ROOT = "KIAN|UNITAS|IMMUNE|CORE"
+
+    @classmethod
+    def root(cls):
+        return cls._ROOT
+
+# =========================================================
+# PHASE CLOCK ⏳ — Time / Context Guard
+# =========================================================
+class PhaseClock:
+    """
+    Defines safe rotation windows.
+    Prevents replay attacks.
+    """
+    ROTATION_WINDOW = 60  # seconds (demo-safe)
+
+    @staticmethod
+    def current_phase():
+        return int(time.time() // PhaseClock.ROTATION_WINDOW)
+
+# =========================================================
+# DNA EXPRESSION 🧬 — Epigenetic Layer
+# =========================================================
+class DNAExpression:
+    """
+    Rotating DNA derived from immutable root.
+    Lineage is preserved through derivation.
+    """
+
+    @staticmethod
+    def express():
+        phase = PhaseClock.current_phase()
+        material = f"{Core.root()}|PHASE:{phase}"
+        return hashlib.sha256(material.encode()).hexdigest()
+
+    @staticmethod
+    def verify(dna_signature):
+        # Accept current or immediately previous phase
+        for delta in (0, -1):
+            phase = PhaseClock.current_phase() + delta
+            material = f"{Core.root()}|PHASE:{phase}"
+            expected = hashlib.sha256(material.encode()).hexdigest()
+            if dna_signature == expected:
+                return True
+        return False
+
+# =========================================================
+# GUARDIAN BONE 🦴 — Structural Geometry
+# =========================================================
+class GuardianBone:
+    """
+    Static topology.
+    Illegal geometry cannot exist.
+    """
+    @staticmethod
+    def validate(cell):
+        return (
+            cell.angle is not None and
+            cell.phase is not None and
+            0 <= cell.angle <= 360
+        )
+
+# =========================================================
+# PI LAYER 🔹 — Curvature & Pressure Buffer
+# =========================================================
+class PiLayer:
+    """
+    Prevents linear force injection.
+    """
+    @staticmethod
+    def dampen(intensity):
+        return min(intensity, 1.0)
+
+# =========================================================
+# WHITE CELLS 🤍 — Immune Drones
+# =========================================================
+class WhiteCell:
+    """
+    Non-intelligent immune response.
+    Detects instability only.
+    """
+    @staticmethod
+    def inspect(cell):
+        if cell.instability > 0.6:
+            print(f"[WHITE CELL] Dampening {cell.name}")
+            cell.instability *= 0.25
+
+# =========================================================
+# LYMPH REFLECTION 🔁 — Output Sanitizer
+# =========================================================
+class LymphReflection:
+    """
+    Nothing raw reaches CORE.
+    """
+    @staticmethod
+    def sanitize(output):
+        return output[:72]
+
+# =========================================================
+# COMMAND CELL ⚫ — Functional Unit
+# =========================================================
+class CommandCell:
+    """
+    Represents a living functional cell.
+    """
+
+    def __init__(self, name, dna_signature, angle, phase):
+        self.name = name
+        self.dna_signature = dna_signature
+        self.angle = angle
+        self.phase = phase
+        self.instability = 0.0
+
+    def execute(self):
+        print(f"\n[EXEC] {self.name}")
+
+        # 1. Lineage verification
+        if not DNAExpression.verify(self.dna_signature):
+            print("[IMMUNE BLOCK] Foreign or expired DNA")
+            return
+
+        # 2. Structural validation
+        if not GuardianBone.validate(self):
+            print("[IMMUNE BLOCK] Illegal topology")
+            return
+
+        # 3. Pressure buffering
+        self.instability = PiLayer.dampen(self.instability)
+
+        # 4. Immune inspection
+        WhiteCell.inspect(self)
+
+        # 5. Execute
+        raw_output = self.run()
+
+        # 6. Sanitize
+        safe_output = LymphReflection.sanitize(raw_output)
+        print("[OUTPUT]", safe_output)
+
+    def run(self):
+        return f"{self.name}: UNITAS CORE STABLE — Lineage Intact"
+
+# =========================================================
+# ASCII DIAGRAM — ENGINEER VIEW
+# =========================================================
+DIAGRAM = r"""
+                   🤍        🤍        🤍
+                        ⚫        ⚫        ⚫
+                              🔹        🔹
+                        ⚫        ⚛️        ⚫
+                              🔹        🔹
+                        ⚫        ⚫        ⚫
+                   🤍        🤍        🤍
+
+Legend:
+⚛️ CORE             = Immutable Identity Genome
+🧬 DNA Expression   = Rotating Epigenetic Signature
+⏳ Phase Clock      = Time-based Guard
+🦴 Guardian Bone    = Structural Geometry
+🔹 PI Layer         = Pressure / Curvature Buffer
+⚫ Command Cells    = Functional Modules
+🤍 White Cells      = Immune Dampening
+"""
+
+# =========================================================
+# DEMO
+# =========================================================
+if __name__ == "__main__":
+    print(DIAGRAM)
+
+    # Self tissue (valid lineage)
+    safe_dna = DNAExpression.express()
+    safe = CommandCell(
+        name="VisionModule",
+        dna_signature=safe_dna,
+        angle=90,
+        phase=1
+    )
+    safe.instability = 0.4
+    safe.execute()
+
+    # Foreign tissue (bacteria)
+    foreign = CommandCell(
+        name="UnknownModule",
+        dna_signature="FAKE_DNA",
+        angle=90,
+        phase=1
+    )
+    foreign.execute()
