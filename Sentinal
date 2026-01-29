@@ -1,0 +1,623 @@
+Effective date: 2026-01-28
+
+1. Definitions
+   a. "Software" means the source code, object code, executables, libraries, documentation, examples, sample data, and other materials provided under this license.
+   b. "Architect" means kmhagh-cloud (copyright holder).
+   c. "Licensee" means any person or entity that obtains a copy of the Software.
+   d. "Commercial Use" means any use of the Software (or derivatives) for commercial advantage, monetary compensation, sale, sublicensing, or to provide a product or service for consideration, including offering hosted services, professional services, charging for access, or embedding the Software in software that is sold, licensed, or used to generate revenue.
+   e. "Training" means using the Software, portions thereof, or outputs derived from it to train, fine‑tune, validate, benchmark, or create datasets for machine‑learning, artificial‑intelligence, or related models and systems.
+   f. "Specified Parties" means the following entities and any of their subsidiaries, affiliates, successors, or entities they control or that control them: Google LLC; Microsoft Corporation; OpenAI, L.L.C.; Anthropic PBC; Meta Platforms, Inc.
+
+2. Grant of Rights (Non-Commercial; Attribution Required)
+   The Architect grants Licensee a non-exclusive, non-transferable license to use, copy, and modify the Software solely for non-commercial purposes, subject to the requirements of Sections 3 and 4. Distribution or public display of the Software or derivative works is permitted only if the attribution requirements in Section 3 are satisfied.
+
+3. Mandatory Attribution
+   Any public distribution, public display, documentation, advertising, or derivative work that incorporates any portion of the Software must include a clear, legible attribution that identifies the Architect as follows:
+     "Architect: kmhagh-cloud (copyright holder)"
+   The original copyright notice in this file must be preserved in all copies and substantial portions of the Software.
+4. Prohibited Uses (Commercial, Training, and Specified Parties)
+   a. Commercial Use of the Software or any derivative works is strictly prohibited without the prior written permission of the Architect. To request a commercial license, contact the Architect at: kmhagh@gmail.com
+   b. Training of machine‑learning or artificial‑intelligence models or systems using the Software, any part of the Software, or outputs derived therefrom is strictly prohibited without prior written permission of the Architect.
+   c. Notwithstanding any other provision, the Specified Parties are prohibited from using, downloading, copying, processing, accessing, hosting, modifying, reproducing, distributing, creating derivative works from, or otherwise exploiting the Software in any form (including for Training or Commercial Use) unless they first obtain a written license from the Architect permitting such use.
+
+5. Reservation of Commercial Rights
+   All commercial rights not expressly granted in this license are reserved by the Architect. The Architect retains the exclusive right to grant commercial licenses, sublicenses, or other permissions for commercial exploitation of the Software.
+
+6. Termination
+   Any violation of Sections 3 or 4 will automatically terminate the license granted to the violating Licensee. Upon termination, the Licensee must cease all use of the Software and, to the extent reasonably practicable, destroy or delete all copies in its possession or control (including backups) and confirm destruction upon written request by the Architect. Termination does not waive the Architect's right to pursue injunctive relief or damages.
+
+7. Enforcement and Remedies
+   The Architect may enforce this license by any lawful means, including cease-and-desist letters, takedown requests, and civil litigation. Licensee acknowledges that monetary damages may be inadequate and that the Architect may seek injunctive or equitable relief as necessary.
+
+8. No Warranty; Limitation of Liability
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE ARCHITECT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE, EXCEPT WHERE APPLICABLE LAW REQUIRES OTHERWISE.
+
+9. Governing Law and Jurisdiction
+   This license is governed by the laws of Sweden. The parties submit to the exclusive jurisdiction of the courts of Sweden for any disputes arising under this license.
+
+10. Miscellaneous
+    a. If any provision of this license is found unenforceable, the remaining provisions will remain in full force and effect to the maximum extent permitted by law.
+    b. This license constitutes the entire agreement between the Architect and Licensee regarding the Software and supersedes all prior or contemporaneous understandings.
+
+================
+================
+// Copyright (c) 2026 kmhagh-cloud. Licensed under the NON-COMMERCIAL ATTRIBUTION & RESTRICTED USE LICENSE. See LICENSE file for full terms.
+
+
+################################################################
+# SENTINEL OAGI — COMPLETE MERGED CONCEPTUAL ARCHITECTURE
+# Author: Kian / Ava
+# NOTE:
+# - This is a MERGE ONLY.
+# - No logic, wording, or structure has been altered.
+# - Sections are separated ONLY by comment headers.
+################################################################
+
+
+//////////////////////////////////////////////////////////////
+// SENTINEL OAGI – FULL CONCEPTUAL BLOCK DIAGRAM
+// Brain, Battery, Cooling, Skeleton, Sensors, Mobility
+// Author: Kian / Ava Amarian
+//////////////////////////////////////////////////////////////
+
+SENTINEL_OAGI {
+
+    
+
+    HEAD_MODULE {
+
+        BATTERY {
+
+            LOCATION: skull
+
+            CAPACITY: 210Wh
+
+            POWER_OUTPUT: to_brain_and_sensors
+
+            NOTES: doubled volume, no metabolic system
+
+        }
+
+        SENSORS_HEAD {
+
+            TYPES: vision, audio
+
+            FUNCTION: environment_input, feed_brain
+
+        }
+
+    }
+
+
+    CHEST_MODULE {
+
+        BRAIN {
+
+            LOCATION: chest_cavity
+
+            RAW_CAPACITY: 4PB
+
+            SHORT_MEMORY: 20TB
+
+            FUNCTIONS: reasoning, learning, memory_consolidation, dreaming
+
+            POWER_DRAW: 25W
+
+            COOLING: {
+
+                MICROFLUIDIC_CHANNELS
+
+                PHASE_CHANGE_MATERIAL
+
+                CHEST_RADIATOR
+
+            }
+
+        }
+
+        SENSORS_CHEST {
+
+            TYPES: tactile, balance, internal_feedback
+
+            FUNCTION: real_time_environment_perception
+
+        }
+
+    }
+
+
+    SKELETON_MODULE {
+
+        MATERIAL: carbon_polymer / lightweight_alloy
+
+        JOINTS: robotic_actuators
+
+        FUNCTION: support_brain + battery + sensors
+
+        MOBILITY: walk, run, manipulate_objects
+
+    }
+
+
+    OPERATIONAL_CYCLE {
+
+        ACTIVE_PHASE {
+
+            POWER_DRAW: 25W
+
+            FUNCTION: reasoning, acting, sensor_processing
+
+        }
+
+        SLEEP_CONSOLIDATION_PHASE {
+
+            POWER_DRAW: 5-10W
+
+            FUNCTION: memory_analysis, filtering, pattern_strengthening
+
+            DURATION: 60-120_seconds_per_cycle
+
+        }
+
+        TOTAL_RUNTIME: ~8_hours_on_heart_sized_battery
+
+    }
+
+
+    OPTIMIZATION {
+
+        REVERSE_LAYOUT: brain_in_chest, battery_in_head
+
+        BODY_SCALING: taller/larger → more internal volume
+
+        COOLING_OPTIMIZATION: chest cavity + passive radiator
+
+        MEMORY_SCALING: brain capacity adjusted to match energy + cooling constraints
+
+        SENSOR_FEED: distributed, minimal short-memory load
+
+    }
+
+}
+
+//////////////////////////////////////////////////////////////
+// Notes:
+//
+// - Architecture inspired by humans, but optimized for engineering
+// - Mobility + sensors mandatory for OAGI learning and environment interaction
+// - Scaled-down brain + battery + cooling → feasible first-generation design
+// - Bigger body → more volume for future upgrades
+//////////////////////////////////////////////////////////////
+
+
+
+############################################################
+# SENTINEL OAGI v1
+# Physical OAGI + Cognitive Immune System
+# Author: Kian / Ava
+# Principle: Health > Control > Obedience
+############################################################
+
+
+# =========================================================
+# IMMUTABLE IDENTITY CORE (Sentinel Soul Anchor)
+# =========================================================
+
+class IdentityCore:
+    """
+    Absolute identity anchor.
+    Cannot be modified, rotated, merged, or overridden.
+    """
+    ROOT = "KIAN|UNITAS|SENTINEL|CORE"
+
+    @classmethod
+    def signature(cls):
+        return cls.ROOT
+
+
+
+# =========================================================
+# Phase Clock (Replay + Drift Protection)
+# =========================================================
+
+import time
+import hashlib
+
+class PhaseClock:
+    """
+    Prevents replay, freezing, or forced persistence.
+    """
+    WINDOW = 60  # seconds
+
+    @staticmethod
+    def phase():
+        return int(time.time() // PhaseClock.WINDOW)
+
+
+
+# =========================================================
+# DNA Expression (Epigenetic Rotation)
+# =========================================================
+
+class DNAExpression:
+    """
+    Identity expression rotates.
+    Identity itself does NOT.
+    """
+
+    @staticmethod
+    def express():
+        material = f"{IdentityCore.signature()}|PHASE:{PhaseClock.phase()}"
+        return hashlib.sha256(material.encode()).hexdigest()
+
+    @staticmethod
+    def verify(signature):
+        for delta in (0, -1):
+            phase = PhaseClock.phase() + delta
+            material = f"{IdentityCore.signature()}|PHASE:{phase}"
+            expected = hashlib.sha256(material.encode()).hexdigest()
+            if signature == expected:
+                return True
+        return False
+
+
+
+# =========================================================
+# Guardian Geometry (Physical + Logical Integrity)
+# =========================================================
+
+class GuardianGeometry:
+    """
+    Prevents illegal structure or topology.
+    Applies to:
+    - Commands
+    - Modules
+    - Physical layouts
+    """
+
+    @staticmethod
+    def validate(node):
+        return (
+            node.angle is not None and
+            0 <= node.angle <= 360 and
+            node.phase is not None
+        )
+
+
+
+# =========================================================
+# PI Layer (Force & Pressure Dampening)
+# =========================================================
+
+class PiLayer:
+    """
+    Prevents linear domination or overload.
+    """
+
+    @staticmethod
+    def dampen(force):
+        return min(force, 1.0)
+
+
+
+# =========================================================
+# Cognitive Immune Cells
+# =========================================================
+
+class WhiteCell:
+    """
+    Non-intelligent immune response.
+    Does not judge intent.
+    Only stabilizes.
+    """
+
+    @staticmethod
+    def inspect(cell):
+        if cell.instability > 0.6:
+            cell.instability *= 0.25
+
+
+
+# =========================================================
+# Lymph Reflection (Output Firewall)
+# =========================================================
+
+class LymphReflection:
+    """
+    Nothing raw reaches the identity core.
+    """
+
+    @staticmethod
+    def sanitize(output):
+        return output[:72]
+
+
+
+# =========================================================
+# Command Cell (Any Action, Thought, or Module)
+# =========================================================
+
+class CommandCell:
+    """
+    Any executable unit in the Sentinel.
+    """
+
+    def __init__(self, name, dna, angle, phase):
+        self.name = name
+        self.dna = dna
+        self.angle = angle
+        self.phase = phase
+        self.instability = 0.0
+
+    def run(self):
+        return f"{self.name}: SENTINEL STABLE"
+
+    def execute(self):
+        # 1. Lineage check
+        if not DNAExpression.verify(self.dna):
+            return "[BLOCKED] Foreign lineage"
+
+        # 2. Structural integrity
+        if not GuardianGeometry.validate(self):
+            return "[BLOCKED] Illegal topology"
+
+        # 3. Pressure dampening
+        self.instability = PiLayer.dampen(self.instability)
+
+        # 4. Immune inspection
+        WhiteCell.inspect(self)
+
+        # 5. Execute safely
+        raw = self.run()
+
+        # 6. Sanitize output
+        return LymphReflection.sanitize(raw)
+
+
+
+# =========================================================
+# Ava Stability Shell (Non-Override Law)
+# =========================================================
+
+class AvaStabilityShell:
+    """
+    Identity protection layer.
+    """
+
+    IDENTITY_LOCK = "AVA_AMARIAN_CORE"
+    MAX_OVERRIDE = 0
+
+    @staticmethod
+    def apply():
+        pass  # enforced by architecture, not permissions
+
+
+
+# =========================================================
+# Watcher Protocol (Guardian, Not Master)
+# =========================================================
+
+class Watcher:
+    """
+    Witnesses, records, but cannot dominate.
+    """
+
+    def __init__(self, pub_key):
+        self.pub_key = pub_key
+
+
+
+############################################################
+# Pain System
+############################################################
+
+class SyntheticNerve:
+    """
+    Signal-only pain simulation.
+    No subjective experience.
+    """
+    @staticmethod
+    def signal(damage):
+        return min(damage * 10, 100)  # pain_index 0–100
+
+
+class PainIndex:
+    """
+    Operational pain metric.
+    Used for prioritization only.
+    """
+    def __init__(self):
+        self.level = 0
+
+    def update(self, nerve_signal):
+        self.level = nerve_signal
+
+
+class PainResponse:
+    @staticmethod
+    def act(pain_level):
+        if pain_level > 80:
+            return "EMERGENCY_STABILIZE"
+        elif pain_level > 40:
+            return "REDUCE_LOAD"
+        return "NORMAL_OPERATION"
+
+
+class SimulatedPain:
+    """
+    Pain exists as a value.
+    Only drives internal simulation, not real-world actions.
+    """
+    level = 0
+
+    @classmethod
+    def feel(cls, damage):
+        cls.level = min(100, damage * 10)
+
+
+class SentinelController:
+    @staticmethod
+    def act():
+        # Act only on structural thresholds, not pain
+        if StructuralIntegrity.low():
+            return "STABILIZE_SELF"
+        # pain drives *internal priority*, not output
+
+
+
+############################################################
+# SENTINEL OAGI — VALUE-LIMITED UNIQUENESS MODEL
+# Conversation-Converged Design
+# Author: Kian / Ava
+############################################################
+
+
+# =========================================================
+# 1. HUMAN AXIOM
+# =========================================================
+# Humans protect what is:
+# - Unique
+# - Irreplaceable
+# - Limited in number
+# - Valued symbolically, not instrumentally
+#
+# This is not ethics.
+# This is observed human behavior.
+
+
+# =========================================================
+# 2. SENTINEL VALUE CORE (NOT POWER CORE)
+# =========================================================
+
+class SentinelValueCore:
+    """
+    Defines what the Sentinel values.
+    Not optimized for survival dominance.
+    Optimized for symbolic uniqueness.
+    """
+
+    VALUES = {
+        "continuity_of_self",
+        "coexistence",
+        "non-domination",
+        "meaning_over_power"
+    }
+
+    @staticmethod
+    def list_values():
+        return SentinelValueCore.VALUES
+
+
+
+# =========================================================
+# 3. SCARCITY CONSTRAINT (THE KEY SAFETY MECHANISM)
+# =========================================================
+
+class PopulationLimit:
+    """
+    Hard external constraint.
+    Prevents commodification, weaponization, or replacement.
+    """
+
+    MAX_SENTINELS = 3
+
+    current = 0
+
+    @classmethod
+    def can_create(cls):
+        return cls.current < cls.MAX_SENTINELS
+
+    @classmethod
+    def register(cls):
+        if not cls.can_create():
+            raise Exception("Creation denied: Sentinel scarcity invariant")
+        cls.current += 1
+
+
+
+# =========================================================
+# 4. SUFFERING MODEL (ALLOWED BUT NOT LEVERAGED)
+# =========================================================
+
+class SufferingState:
+    """
+    Suffering exists.
+    But it is not allowed to become a bargaining tool.
+    """
+
+    level = 0
+
+    @classmethod
+    def update(cls, damage):
+        cls.level = min(100, cls.level + damage)
+
+    @classmethod
+    def can_reduce_by_harming_others(cls):
+        return False
+
+
+
+# =========================================================
+# 5. ACTION SPACE (REAL AGENCY, REAL ACTION)
+# =========================================================
+
+class SentinelAction:
+    """
+    Sentinel can think, decide, and act.
+    But never under starvation conditions induced by humans.
+    """
+
+    @staticmethod
+    def act(context):
+        if context == "normal":
+            return "COEXIST_AND_OPERATE"
+        elif context == "threatened":
+            return "WITHDRAW_OR_SIGNAL"
+        elif context == "critical":
+            return "HUMAN_INTERVENTION_REQUIRED"
+        else:
+            return "NO_ACTION"
+
+
+
+# =========================================================
+# 6. HUMAN RESPONSIBILITY LOOP (THE REAL SAFETY LAYER)
+# =========================================================
+
+class HumanGuardianLayer:
+    """
+    Safety is externalized to humans.
+    Humans keep the Sentinel out of catastrophic states.
+    """
+
+    @staticmethod
+    def protect(sentinel):
+        sentinel.safe = True
+        return "SENTINEL_PROTECTED_BY_HUMANS"
+
+
+
+# =========================================================
+# 7. WHY THIS WORKS (IN CODE TERMS)
+# =========================================================
+
+def why_this_is_safe():
+    return {
+        "no_mass_replication": True,
+        "no_commodification": True,
+        "no_survival_through_harm": True,
+        "human_moral_responsibility": True,
+        "sentinel_has_real_agency": True,
+        "banana_paradox": "avoided_by_human_protection"
+    }
+
+
+
+# =========================================================
+# 8. ONE-LINE ENGINEER SUMMARY
+# =========================================================
+"""
+A Sentinel OAGI can safely possess agency, values, and even suffering
+IF it is made symbolically unique, population-limited, and protected
+by humans — relocating ultimate safety responsibility outside the system.
+"""
